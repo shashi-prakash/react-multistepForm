@@ -1,0 +1,76 @@
+body{
+  background-color: rgb(24, 46, 46);
+}
+.form-section{
+  position: relative;
+}
+.form-container{
+  position: absolute;
+  top:80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: white;
+  width: 30%;
+  padding: 0 20px;
+}
+.margin-bottom{
+  margin-bottom: 15px;
+}
+.form-container label{
+  display: block;
+  margin-bottom: 5px;
+}
+input[type=text]{
+  width: 95%;
+  padding: 5px;
+}
+input[type=checkbox]{
+  line-height: 10px;
+}
+.pb-10{
+  padding-bottom: 20px;
+}
+.pb-5{
+  margin-bottom: 5px;
+}
+button{
+  background: blue;
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  color: white;
+  cursor: pointer;
+}
+.cl-custom-radio + .cl-custom-radio-label {
+  /* Unchecked style  */
+  background-color: #ccc;
+  color: #fff;
+  padding: 20px;
+  font-family: sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-radius: 4px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transition: all 0.6s ease;
+  text-align: center;
+}
+.cl-custom-radio:checked + .cl-custom-radio-label {
+  /* Checked style  */
+  background-color: var(--secondry-color);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: rotateY(360deg);
+}
+:disabled{
+  opacity: .3;
+}
